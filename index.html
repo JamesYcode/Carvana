@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/index.js"></script>
@@ -14,35 +18,105 @@
         <div class="navbar-mobile">
           <a href="#"><img src="assests/combo-desktop-carvana.svg" alt="" /></a>
           <ul class="navbar-mobile-links desktop">
-            <li>Search Cars</li>
+            <li>🍳 Search Cars</li>
             <li>Sell/Trade</li>
             <li>Finance</li>
           </ul>
-          <button>Nav</button>
+          <div class="testing">
+            <div role="button" class="sidebar-btn">
+              <img src="assests/person.svg" alt="" />
+              <img src="assests/hamburger.svg" alt="" />
+            </div>
+          </div>
         </div>
         <div>
           <ul class="navbar-mobile-links mobile">
-            <li>Search Cars</li>
+            <li>🍳 Search Cars</li>
             <li>Sell/Trade</li>
             <li>Finance</li>
           </ul>
-          <ul class="sidebar" id="sidebar">
-            <div class="empty-container">
-              <div class="empty"></div>
-              <h2>Welcome to Carvana</h2>
-              <p>Personalize your experience</p>
-              <button>Sign In</button>
+          <ul class="sidebar-container" id="sidebar-container">
+            <div class="sidebar" id="sidebar">
+              <div class="sidebar-container-toggle">
+                <p>
+                  <svg
+                    class="close-sidebar"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="nwoU4FWWiJWDaDzIwCzI"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </p>
+              </div>
+
+              <div class="sidebar-intro">
+                <h2>Welcome to Carvana</h2>
+                <p>Personalize your experience</p>
+                <button>Sign in</button>
+              </div>
+              <li class="sidebar-intro-li">
+                <div class="sidebar-content">
+                  <div>
+                    <p>Carvana Financing</p>
+                    <p>Shop with personalized terms.</p>
+                    <p>No hit to your credit.</p>
+                  </div>
+                  <div class="arrow">➜</div>
+                </div>
+              </li>
+              <li class="sidebar-intro-li">
+                <div class="sidebar-content">
+                  <div>
+                    <p>Sell or Trade Your Car</p>
+                    <p>Get a real offer in 2 minutes.</p>
+                  </div>
+                  <div class="arrow">➜</div>
+                </div>
+              </li>
+              <li>
+                <div class="sidebar-accordion-container">
+                  <div class="sidebar-accordion">
+                    <p>How it Works</p>
+                    <span class="sidebar-toggle">+</span>
+                  </div>
+                  <ul class="sidebar-deactive transform" id="sidebar-deactive">
+                    <li>Buying from Carvana</li>
+                    <li>Selling or Trading-in</li>
+                    <li>Finance with Carvana</li>
+                    <li>Auto Loan Calculator</li>
+                    <li>Carvana Value Tracker</li>
+                    <li>Our Protection Plans</li>
+                    <li>Repairs With Carvana</li>
+                    <li>Certified Insurance</li>
+                    <li>Carvana Insurance</li>
+                    <li>Used EV Tax Credit</li>
+                  </ul>
+                </div>
+              </li>
+              <li id="hello">
+                <div class="sidebar-accordion-container">
+                  <div class="sidebar-accordion">
+                    <p>About Carvana</p>
+                    <span class="sidebar-toggle">+</span>
+                  </div>
+                  <ul class="sidebar-deactive transform" id="sidebar-deactive">
+                    <li>About Us</li>
+                    <li>Customer Reviews</li>
+                    <li>Careers</li>
+                  </ul>
+                </div>
+              </li>
+              <div class="sidebar-outro">
+                <button>Support & Contact</button>
+              </div>
             </div>
-            <li>
-              <p>Carvana Financing</p>
-              <p>Shop with personalized terms.</p>
-              <p>No hit to your credit.</p>
-            </li>
-            <li>
-              <p>Sell or Trade Your Car</p>
-              <p>Get a real offer in 2 minutes.</p>
-            </li>
-            <li>Finance</li>
           </ul>
         </div>
       </nav>
