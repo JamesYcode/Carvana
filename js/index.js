@@ -33,7 +33,7 @@ sidebarBtn.addEventListener('click', function () {
   sidebar.style.display = 'block';
   sidebar.classList.add('sidebar-active');
 
-  console.log('clicked');
+  // console.log('clicked');
 });
 
 closeSideBar.addEventListener('click', function () {
