@@ -22,6 +22,7 @@ body {
   max-width: 1800px;
   margin: 0 auto;
   position: relative;
+  background-color: #fff;
 }
 
 /* Navbar */
@@ -402,25 +403,31 @@ body {
 
 .section {
   max-width: 1056px;
-  margin: 1.5rem auto auto auto;
+  /* margin: 1.5rem auto auto auto; */
+  margin: 0 auto;
+  padding-top: 1.5rem;
 }
 
-.car-link {
+.sub-section {
   max-width: 500px;
   width: 90%;
   margin: 0 auto;
-  /* border: 1px solid #00aed9; */
+}
+
+.car-link {
   border-radius: 8px;
-  /* padding: 1rem; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color: #183558;
+  border: 1px solid #18355833;
+  cursor: pointer;
 }
 
 .car-link div:first-child {
   /* border: 1px solid red; */
   width: 50%;
+  /* margin-top: 1.5rem; */
   padding: 1rem;
 }
 
@@ -442,6 +449,7 @@ img {
 .car-link a {
   /* padding: 1.5rem; */
   width: 100%;
+
   font-size: 0.75rem;
   font-weight: 600;
   color: #fff;
@@ -454,6 +462,60 @@ img {
 
 .learn-more {
   display: none;
+}
+
+/* Second section popular vehicle */
+
+.popular-vehicle {
+  /* border: 1px solid green; */
+  margin-top: 2.5rem;
+}
+
+/* Swiper */
+
+.popular-vehicle-selections {
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vehicle-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #18355833;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.vehicle-style img {
+  width: 70%;
+}
+
+.vehicle-style a {
+  font-size: 0.92rem;
+  color: #183558;
+}
+
+.vehicle-style-shop {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.vehicle-style-shop a {
+  padding: 2rem;
+}
+
+.vehicle-style a span {
+  margin-left: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -505,17 +567,10 @@ img {
   .car-link {
     max-width: inherit;
     width: auto;
-    /* border: 1px solid #00aed9; */
-    border-radius: 8px;
-    /* padding: 1rem; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     background-color: #fff;
   }
 
   .car-link div:first-child {
-    /* border: 1px solid red; */
     width: 27%;
     padding: 1.5rem;
     background-color: #183558;
@@ -565,5 +620,56 @@ img {
 
   .car-link a::before {
     display: none;
+  }
+
+  .popular-vehicle {
+    max-width: inherit;
+    width: inherit;
+    font-size: 1.3rem;
+  }
+
+  .popular-vehicle-selections {
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .vehicle-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #18355833;
+    border-radius: 8px;
+    width: 14%;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .vehicle-style img {
+    width: 90%;
+  }
+
+  .vehicle-style a {
+    font-size: 0.92rem;
+    color: #183558;
+  }
+
+  .vehicle-style-shop {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .vehicle-style-shop a {
+    padding: 2rem;
+  }
+
+  .vehicle-style a span {
+    margin-left: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }

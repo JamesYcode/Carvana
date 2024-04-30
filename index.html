@@ -1,154 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/index.js"></script>
-    <title>CarShop | Buy New & Used Cars</title>
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar">
-        <div class="navbar-mobile">
-          <a href="#"><img src="assests/combo-desktop-carvana.svg" alt="" /></a>
-          <ul class="navbar-mobile-links nav-desktop">
-            <li>🍳 Search Cars</li>
-            <li>Sell/Trade</li>
-            <li>Finance</li>
-          </ul>
-          <div class="sidebar-btn-container">
-            <div role="button" class="sidebar-btn">
-              <img src="assests/person.svg" alt="" />
-              <img src="assests/hamburger.svg" alt="" />
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/index.js"></script>
+  <title>CarShop | Buy New & Used Cars</title>
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar"> 
+      <div class="navbar-mobile">
+        <a href="#"><img src="assests/combo-desktop-carvana.svg" alt="" /></a>
+        <ul class="navbar-mobile-links nav-desktop">
+          <li>🍳 Search Cars</li>
+          <li>Sell/Trade</li>
+          <li>Finance</li>
+        </ul>
+        <div class="sidebar-btn-container">
+          <div role="button" class="sidebar-btn">
+            <img src="assests/person.svg" alt="" />
+            <img src="assests/hamburger.svg" alt="" />
           </div>
         </div>
+      </div>
+      <div>
+        <ul class="navbar-mobile-links nav-mobile">
+          <li>🍳 Search Cars</li>
+          <li>Sell/Trade</li>
+          <li>Finance</li>
+        </ul>
+        <ul class="sidebar-container" id="sidebar-container">
+          <div class="sidebar" id="sidebar">
+            <div class="sidebar-container-toggle">
+              <p>
+                <svg class="close-sidebar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  class="nwoU4FWWiJWDaDzIwCzI">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </p>
+            </div>
+
+            <div class="sidebar-intro">
+              <h2>Welcome to Carvana</h2>
+              <p>Personalize your experience</p>
+              <button>Sign in</button>
+            </div>
+            <li class="sidebar-intro-li">
+              <div class="sidebar-content">
+                <div>
+                  <p>Carvana Financing</p>
+                  <p>Shop with personalized terms.</p>
+                  <p>No hit to your credit.</p>
+                </div>
+                <div class="arrow">➜</div>
+              </div>
+            </li>
+            <li class="sidebar-intro-li">
+              <div class="sidebar-content">
+                <div>
+                  <p>Sell or Trade Your Car</p>
+                  <p>Get a real offer in 2 minutes.</p>
+                </div>
+                <div class="arrow">➜</div>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar-accordion-container">
+                <div class="sidebar-accordion">
+                  <p>How it Works</p>
+                  <span class="sidebar-toggle">+</span>
+                </div>
+                <ul class="sidebar-deactive transform" id="sidebar-deactive">
+                  <li>Buying from Carvana</li>
+                  <li>Selling or Trading-in</li>
+                  <li>Finance with Carvana</li>
+                  <li>Auto Loan Calculator</li>
+                  <li>Carvana Value Tracker</li>
+                  <li>Our Protection Plans</li>
+                  <li>Repairs With Carvana</li>
+                  <li>Certified Insurance</li>
+                  <li>Carvana Insurance</li>
+                  <li>Used EV Tax Credit</li>
+                </ul>
+              </div>
+            </li>
+            <li id="hello">
+              <div class="sidebar-accordion-container">
+                <div class="sidebar-accordion">
+                  <p>About Carvana</p>
+                  <span class="sidebar-toggle">+</span>
+                </div>
+                <ul class="sidebar-deactive transform" id="sidebar-deactive">
+                  <li>About Us</li>
+                  <li>Customer Reviews</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </li>
+            <div class="sidebar-outro">
+              <button>Support & Contact</button>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container hero-container">
+    <div class="hero">
+      <h2 class="hero-title">Right Car. Right Price.</h2>
+      <p class="hero-subtitle">Financing made easy.</p>
+      <form class="hero-form">
+        <p>🍳</p>
+        <input class="hero-input" type="text" placeholder="Search Make, Model, or Keyword" />
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="car-link sub-section">
         <div>
-          <ul class="navbar-mobile-links nav-mobile">
-            <li>🍳 Search Cars</li>
-            <li>Sell/Trade</li>
-            <li>Finance</li>
-          </ul>
-          <ul class="sidebar-container" id="sidebar-container">
-            <div class="sidebar" id="sidebar">
-              <div class="sidebar-container-toggle">
-                <p>
-                  <svg
-                    class="close-sidebar"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="nwoU4FWWiJWDaDzIwCzI"
-                  >
-                    <path
-                      fill="currentColor"
-                      fill-rule="evenodd"
-                      d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </p>
-              </div>
-
-              <div class="sidebar-intro">
-                <h2>Welcome to Carvana</h2>
-                <p>Personalize your experience</p>
-                <button>Sign in</button>
-              </div>
-              <li class="sidebar-intro-li">
-                <div class="sidebar-content">
-                  <div>
-                    <p>Carvana Financing</p>
-                    <p>Shop with personalized terms.</p>
-                    <p>No hit to your credit.</p>
-                  </div>
-                  <div class="arrow">➜</div>
-                </div>
-              </li>
-              <li class="sidebar-intro-li">
-                <div class="sidebar-content">
-                  <div>
-                    <p>Sell or Trade Your Car</p>
-                    <p>Get a real offer in 2 minutes.</p>
-                  </div>
-                  <div class="arrow">➜</div>
-                </div>
-              </li>
-              <li>
-                <div class="sidebar-accordion-container">
-                  <div class="sidebar-accordion">
-                    <p>How it Works</p>
-                    <span class="sidebar-toggle">+</span>
-                  </div>
-                  <ul class="sidebar-deactive transform" id="sidebar-deactive">
-                    <li>Buying from Carvana</li>
-                    <li>Selling or Trading-in</li>
-                    <li>Finance with Carvana</li>
-                    <li>Auto Loan Calculator</li>
-                    <li>Carvana Value Tracker</li>
-                    <li>Our Protection Plans</li>
-                    <li>Repairs With Carvana</li>
-                    <li>Certified Insurance</li>
-                    <li>Carvana Insurance</li>
-                    <li>Used EV Tax Credit</li>
-                  </ul>
-                </div>
-              </li>
-              <li id="hello">
-                <div class="sidebar-accordion-container">
-                  <div class="sidebar-accordion">
-                    <p>About Carvana</p>
-                    <span class="sidebar-toggle">+</span>
-                  </div>
-                  <ul class="sidebar-deactive transform" id="sidebar-deactive">
-                    <li>About Us</li>
-                    <li>Customer Reviews</li>
-                    <li>Careers</li>
-                  </ul>
-                </div>
-              </li>
-              <div class="sidebar-outro">
-                <button>Support & Contact</button>
-              </div>
-            </div>
-          </ul>
+          <img src="assests/carvana.svg" alt="" />
         </div>
-      </nav>
-    </header>
-
-    <div class="container hero-container">
-      <div class="hero">
-        <h2 class="hero-title">Right Car. Right Price.</h2>
-        <p class="hero-subtitle">Financing made easy.</p>
-        <form class="hero-form">
-          <p>🍳</p>
-          <input
-            class="hero-input"
-            type="text"
-            placeholder="Search Make, Model, or Keyword"
-          />
-        </form>
+        <a href="">Always know the value of your vehicle</a>
+        <a href="">Know your vehicle's value</a>
+        <span>➜</span>
+        <span role='link' data-href="#" class="learn-more">Learn More</span>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="section">
-        <div class="car-link">
-          <div>
-            <img src="assests/carvana.svg" alt="" />
+      <div class="popular-vehicle sub-section">
+        <h3>Popular vehicle styles</h3>
+
+        <div class='popular-vehicle-selections'>
+          <div class='vehicle-style'>
+            <img src="assests/suv.webp" alt="">
+            <a href="">SUVs</a>
           </div>
-          <a href="">Always know the value of your vehicle</a>
-          <a href="">Know your vechicle's value</a>
-          <span>➜</span>
-          <span class="learn-more">Learn More</span>
+          <div class='vehicle-style'>
+            <img src="assests/sedan.webp" alt="">
+            <a href="">Sedans</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/truck.webp" alt="">
+            <a href="">Trucks</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/coupe.webp" alt="">
+            <a href="">Coupes</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/minivan.webp" alt="">
+            <a href="">Minivans</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/convertible.webp" alt="">
+            <a href="">Convertibles</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/wagon.webp" alt="">
+            <a href="">Wagons</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/hatchback.webp" alt="">
+            <a href="">Hatchbacks</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/electric.webp" alt="">
+            <a href="">Electrics</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/hybrid.webp" alt="">
+            <a href="">Hybrids</a>
+          </div>
+          <div class='vehicle-style'>
+            <img src="assests/plug-in-hybrid.webp" alt="">
+            <a href="">Plug-in-Hybrids</a>
+          </div>
+          <div class='vehicle-style'>
+            <div class='vehicle-style-shop'>
+              <a href="">Shop All <span>↪</span></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
