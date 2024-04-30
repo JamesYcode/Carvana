@@ -431,8 +431,7 @@ body {
   padding: 1rem;
 }
 
-.car-link div,
-img {
+.car-link-img-container {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -573,6 +572,7 @@ img {
   border-radius: 10px;
   margin-top: 2.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: relative;
 }
@@ -585,13 +585,17 @@ img {
   display: none;
 }
 
+.discount-description {
+  text-align: center;
+}
+
 .discount-description h3 {
   color: #183558;
 }
 
 .discount-description a {
   background-color: #fff;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto;
   display: inline-block;
   border: 1px solid #00aed9;
   border-radius: 3px;
@@ -602,16 +606,96 @@ img {
   font-weight: 600;
 }
 
+/* Affordable */
+
 .affordable-container {
   background-color: #f4f8fa;
 }
 
 .affordable-content {
   margin-top: 3rem;
+  padding-bottom: 7rem;
+  border: 1px solid red;
+  /* margin-bottom: 5rem; */
 }
 
 .affordable-content h2 {
-  margin-top: 3rem;
+  display: none;
+}
+
+.affordable-icon-container {
+  display: none;
+}
+
+.affordable-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 90%;
+  margin-top: 5.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.affordable-card {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+}
+
+.affordable-card-img-container {
+  /* border: 1px solid green; */
+  width: 100%;
+}
+.affordable-card-img {
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.affordable-card-content {
+  border: 1px solid #18355833;
+  margin-top: -0.4rem;
+}
+
+.affordable-content {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.affordable-content h4 {
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
+}
+
+.affordable-content p {
+  margin-top: 1rem;
+  padding: 0 5rem;
+  font-size: 0.9rem;
+  color: #6d7184;
+}
+
+.affordable-content a {
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 50%;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00aed9;
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: #183558;
+  height: 50vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -672,8 +756,7 @@ img {
     background-color: #183558;
   }
 
-  .car-link div,
-  img {
+  .car-link div img {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
@@ -764,6 +847,58 @@ img {
 
   .popular-vehicle-sub-section-container {
     flex-direction: row;
+  }
+
+  /* Discount */
+
+  .discount-container {
+    flex-direction: row;
+  }
+
+  .discount-description {
+    text-align: start;
+  }
+
+  /* Affordable */
+
+  .affordable-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .affordable-card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .affordable-content h2 {
+    display: block;
+    margin-top: 3rem;
+    text-align: start;
+  }
+
+  .affordable-icon {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .affordable-icon p {
+    padding: 0;
+  }
+
+  .affordable-icon img {
+    width: 30%;
+  }
+
+  .affordable-icon:nth-child(2) img {
+    width: 17.5%;
   }
 }
 
