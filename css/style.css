@@ -840,7 +840,7 @@ body {
   margin: 0 auto;
 }
 
-.copyrights-content-mobile a {
+.copyrights-content-mobile p {
   color: #aab1c7;
   font-size: 0.8rem;
 }
@@ -1177,8 +1177,9 @@ body {
     width: 60%;
   }
 
-  .copyrights-content a {
+  .copyrights-content p {
     color: #aab1c7;
+    cursor: initial;
     font-size: 0.8rem;
   }
 }
